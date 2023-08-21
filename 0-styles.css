@@ -1,0 +1,218 @@
+:root {
+    --foreground-white-color: white;
+    --foreground-red-color: #FF6565;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Light.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: grey;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    header {
+        margin-top: 29px;
+    }
+}
+@media screen and (min-width: 768px) {
+    header {
+        margin-top: 27.76px;
+    }
+}
+
+#header-nav-toggle {
+    display: none;
+}
+
+header nav {
+    width: 255px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header a {
+    font: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15.08px;
+
+    color: var(--foreground-white-color);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--foreground-red-color);
+}
+
+@media screen and (max-width: 767px) {
+    #hamburger-button,
+    #hamburger-button::before,
+    #hamburger-button::after {
+        display: block;
+        background-color: var(--foreground-white-color);
+        width: 32px;
+        height: 4px;
+
+        transition: all .2s ease-out;
+    }
+    #hamburger-button::before {
+        content: "";
+        position: relative;
+        top: -8px;
+    }
+    #hamburger-button::after {
+        content: "";
+        position: relative;
+        top: 4px;
+    }
+    #header-nav-toggle:checked ~ #hamburger-button {
+        background: transparent;
+    }
+    #header-nav-toggle:checked ~ #hamburger-button::before {
+        content: "";
+        transform: translateY(8px) rotate(-45deg);
+    }
+    #header-nav-toggle:checked ~ #hamburger-button::after {
+        content: "";
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    #header-nav-toggle:not(:checked) ~ nav {
+        display: none;
+    }
+    #header-nav-toggle:checked ~ nav {
+        display: block;
+    }
+    #header-nav-toggle:checked ~ nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #hamburger-button {
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+#banner-section {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-position: center;
+    background-size: cover;
+
+    color: var(--foreground-white-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+#banner-foreground {
+    max-width: 637px;
+    padding: 9px;
+    margin: auto;
+}
+
+h1 {
+    font: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40.22px;
+}
+
+@media screen and (max-width: 767px) {
+    #banner-foreground {
+        margin-top: 327px;
+        margin-bottom: 106px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #banner-foreground {
+        margin-top: 372px;
+        margin-bottom: 115px;
+    }
+}
+
+#subtitle {
+    font: 'Source Sand Pro';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20.11px;
+}
+
+.call-to-action-button {
+    background-color: var(--foreground-red-color);
+    color: var(--foreground-white-color);
+
+    font: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17.6px;
+
+    padding: 13px 31px;
+    border: none;
+    border-radius: 50%;
+
+    box-shadow: 20px 20px #000000;
+}
+.call-to-action-button:hover {
+    cursor: pointer;
+}
+
+p {
+    font: 'Source Sans Pro';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#banner-foreground-body p {
+    margin-top: 65px;
+}
