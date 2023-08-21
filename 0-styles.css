@@ -1,5 +1,5 @@
 :root {
-    --foreground-white-color: white;
+    --bright-color: white;
     --foreground-red-color: #FF6565;
 }
 
@@ -48,6 +48,10 @@ header {
     }
 }
 
+header img {
+    height: 32px;
+}
+
 #header-nav-toggle {
     display: none;
 }
@@ -67,7 +71,7 @@ header a {
     font-size: 12px;
     line-height: 15.08px;
 
-    color: var(--foreground-white-color);
+    color: var(--bright-color);
     text-decoration: none;
 }
 
@@ -80,7 +84,7 @@ header a:hover {
     #hamburger-button::before,
     #hamburger-button::after {
         display: block;
-        background-color: var(--foreground-white-color);
+        background-color: var(--bright-color);
         width: 32px;
         height: 4px;
 
@@ -141,7 +145,7 @@ header a:hover {
     background-position: center;
     background-size: cover;
 
-    color: var(--foreground-white-color);
+    color: var(--bright-color);
 
     display: flex;
     flex-direction: column;
@@ -152,7 +156,7 @@ header a:hover {
 
 #banner-foreground {
     max-width: 637px;
-    padding: 9px;
+    padding: 0px 9px;
     margin: auto;
 }
 
@@ -172,6 +176,11 @@ h1 {
     h1 {
         margin-bottom: 5px;
     }
+
+    #banner-section p {
+        display: content-box;
+        padding: 0px 11px;
+    }
 }
 @media screen and (min-width: 768px) {
     #banner-foreground {
@@ -189,18 +198,19 @@ h1 {
 
 .call-to-action-button {
     background-color: var(--foreground-red-color);
-    color: var(--foreground-white-color);
+    color: var(--bright-color);
 
     font: 'Source Sans Pro';
     font-weight: bold;
     font-size: 14px;
     line-height: 17.6px;
 
-    padding: 13px 31px;
+    width: 162px;
+    height: 44px;
     border: none;
-    border-radius: 50%;
+    border-radius: 22px;
 
-    box-shadow: 20px 20px #000000;
+    /* PLEASE ADD SHADOW */
 }
 .call-to-action-button:hover {
     cursor: pointer;
@@ -213,6 +223,15 @@ p {
     line-height: 26px;
 }
 
-#banner-foreground-body p {
+#banner-foreground > p {
     margin-top: 65px;
+}
+
+#subtitle-and-button {
+    min-height: 104px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }

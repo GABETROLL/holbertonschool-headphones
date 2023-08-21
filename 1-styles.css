@@ -1,0 +1,41 @@
+:root {
+    --bright-color: white;
+    --foreground-red-color: #FF6565;
+    --dark-color: #071629;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Light.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+}
+
+#what-we-do-section {
+    background-color: var(--bright-color);
+    color: var(--dark-color);
+
+    padding-top: 110px;
+
+    text-align: center;
+}
