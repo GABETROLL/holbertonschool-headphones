@@ -273,28 +273,34 @@ h1 {
 
     margin: 110px 0px;
 }
-#what-we-do-text p {
-    margin: 40px auto 0px auto;
+
+#what-we-do-text {
     max-width: 637px;
-    padding: 25px 0px;
+
+    margin: 0px auto;
+    padding: 0px 25px;
+}
+#what-we-do-text p {
+    margin-top: 40px;
 }
 
 #what-we-do-section ul {
-    max-width: 1002px;
-
-    margin: auto;
-
     list-style: none;
 
+    margin: auto;
+    padding: 0px 96px;
+
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 }
 
 #what-we-do-section li {
     max-width: 207px;
     min-height: 180px;
+
+    margin: 0px calc(58px / 2);
+    margin-top: 96px;
 }
 
 #what-we-do-section h3 {
