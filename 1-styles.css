@@ -1,6 +1,6 @@
 :root {
     --bright-color: white;
-    --foreground-red-color: #FF6565;
+    --red-color: #FF6565;
     --dark-color: #071629;
 }
 
@@ -21,21 +21,236 @@
     font-weight: bold;
 }
 
+/* GENERAL SELECTORS */
+
 * {
     margin: 0px;
     padding: 0px;
+
+    font-family: 'Source Sans Pro';
 }
 
-h2 {
-    font-size: 32px;
-    line-height: 37.5px;
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
 }
 
-#what-we-do-section {
-    background-color: var(--bright-color);
-    color: var(--dark-color);
+.call-to-action-button {
+    background-color: var(--red-color);
+    color: var(--bright-color);
 
-    padding-top: 110px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17.6px;
+
+    width: 162px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+
+    /* PLEASE ADD SHADOW */
+}
+.call-to-action-button:hover {
+    cursor: pointer;
+}
+
+/* EXERCISE 1 */
+
+header {
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+    header {
+        margin-top: 29px;
+    }
+}
+@media screen and (min-width: 768px) {
+    header {
+        margin-top: 27.76px;
+    }
+}
+
+header img {
+    height: 32px;
+}
+
+#header-nav-toggle {
+    display: none;
+}
+
+header nav {
+    width: 255px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header a {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15.08px;
+
+    color: var(--bright-color);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--red-color);
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --hamburger-button-height: 2px;
+        --hamburger-button-big-width: 20px;
+        --hamburger-button-line-translate: 8px;
+    }
+
+    #hamburger-button,
+    #hamburger-button::before,
+    #hamburger-button::after {
+        display: block;
+        background-color: var(--bright-color);
+        height: var(--hamburger-button-height);
+
+        border-radius: calc(var(--hamburger-button-height) / 2);
+
+        transition: all .2s ease-out;
+    }
+    #hamburger-button {
+        width: 13px;
+    }
+    #hamburger-button::before {
+        content: "";
+        position: absolute;
+        transform: translateY(calc(-1 * var(--hamburger-button-line-translate)));
+
+        width: var(--hamburger-button-big-width);
+    }
+    #hamburger-button::after {
+        content: "";
+        position: absolute;
+        transform: translateY(var(--hamburger-button-line-translate));
+
+        width: var(--hamburger-button-big-width);
+    }
+    #header-nav-toggle:checked ~ #hamburger-button {
+        background: transparent;
+    }
+    #header-nav-toggle:checked ~ #hamburger-button::before {
+        content: "";
+        transform: translateY(0px) rotate(-45deg);
+    }
+    #header-nav-toggle:checked ~ #hamburger-button::after {
+        content: "";
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header li {
+        margin: 20px 0px;
+    }
+
+    #header-nav-toggle:not(:checked) ~ nav {
+        display: none;
+    }
+    #header-nav-toggle:checked ~ nav {
+        display: block;
+    }
+    #header-nav-toggle:checked ~ nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #hamburger-button {
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+#banner-section {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-position: center;
+    background-size: cover;
+
+    color: var(--bright-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     text-align: center;
+}
+
+#banner-foreground {
+    max-width: 637px;
+    padding: 0px 9px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40.22px;
+}
+
+@media screen and (max-width: 767px) {
+    #banner-foreground {
+        margin-top: 327px;
+        margin-bottom: 106px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    #banner-section p {
+        display: content-box;
+        padding: 0px 11px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #banner-foreground {
+        margin-top: 372px;
+        margin-bottom: 115px;
+    }
+}
+
+#subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20.11px;
+}
+
+#banner-foreground > p {
+    margin-top: 65px;
+}
+
+#subtitle-and-button {
+    min-height: 104px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
