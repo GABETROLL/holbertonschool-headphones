@@ -23,12 +23,41 @@
     font-weight: bold;
 }
 
+/* GENERAL SELECTORS */
+
 * {
     margin: 0px;
     padding: 0px;
 
     font-family: 'Source Sans Pro';
 }
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.call-to-action-button {
+    background-color: var(--red-color);
+    color: var(--bright-color);
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17.6px;
+
+    width: 162px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+
+    /* PLEASE ADD SHADOW */
+}
+.call-to-action-button:hover {
+    cursor: pointer;
+}
+
+/* EXERCISE 1 */
 
 header {
     width: 100%;
@@ -174,7 +203,6 @@ header a:hover {
 }
 
 h1 {
-    font: 'Source Sans Pro';
     font-weight: bold;
     font-size: 32px;
     line-height: 40.22px;
@@ -203,37 +231,9 @@ h1 {
 }
 
 #subtitle {
-    font: 'Source Sand Pro';
     font-weight: bold;
     font-size: 16px;
     line-height: 20.11px;
-}
-
-.call-to-action-button {
-    background-color: var(--red-color);
-    color: var(--bright-color);
-
-    font: 'Source Sans Pro';
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17.6px;
-
-    width: 162px;
-    height: 44px;
-    border: none;
-    border-radius: 22px;
-
-    /* PLEASE ADD SHADOW */
-}
-.call-to-action-button:hover {
-    cursor: pointer;
-}
-
-p {
-    font: 'Source Sans Pro';
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
 }
 
 #banner-foreground > p {
