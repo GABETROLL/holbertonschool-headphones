@@ -66,6 +66,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
     header {
@@ -158,6 +160,10 @@ header a:hover {
 
     header nav ul {
         flex-direction: column;
+    }
+
+    header li {
+        margin: 20px 0px;
     }
 
     #header-nav-toggle:not(:checked) ~ nav {
