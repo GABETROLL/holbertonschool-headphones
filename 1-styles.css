@@ -21,6 +21,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Semibold.otf');
+    font-weight: 600;
+}
+
 /* GENERAL SELECTORS */
 
 * {
@@ -28,6 +34,13 @@
     padding: 0px;
 
     font-family: 'Source Sans Pro';
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 600;
 }
 
 p {
@@ -198,8 +211,6 @@ header a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    text-align: center;
 }
 
 #banner-foreground {
@@ -253,4 +264,45 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+/* EXERCISE 1 */
+
+#what-we-do-section {
+    color: var(--dark-color);
+
+    margin: 110px 0px;
+}
+#what-we-do-text p {
+    margin: 40px auto 0px auto;
+    max-width: 637px;
+    padding: 25px 0px;
+}
+
+#what-we-do-section ul {
+    max-width: 1002px;
+
+    margin: auto;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#what-we-do-section li {
+    max-width: 207px;
+    min-height: 180px;
+}
+
+#what-we-do-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+#what-we-do-section ul p {
+    margin-top: 13px;
 }
