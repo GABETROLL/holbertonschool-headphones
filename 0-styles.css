@@ -1,6 +1,9 @@
 :root {
     --bright-color: white;
-    --foreground-red-color: #FF6565;
+    --red-color: #FF6565;
+    --dark-color: #071629;
+
+
 }
 
 @font-face {
@@ -23,6 +26,8 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    font-family: 'Source Sans Pro';
 }
 
 header {
@@ -62,7 +67,7 @@ header nav ul {
 }
 
 header a {
-    font: 'Source Sans Pro';
+    font-family: 'Source Sans Pro';
     font-weight: bold;
     font-size: 12px;
     line-height: 15.08px;
@@ -72,16 +77,22 @@ header a {
 }
 
 header a:hover {
-    color: var(--foreground-red-color);
+    color: var(--red-color);
 }
 
 @media screen and (max-width: 767px) {
+    :root {
+        --hamburger-button-height: 2px;
+        --hamburger-button-big-width: 20px;
+        --hamburger-button-line-translate: 8px;
+    }
+
     #hamburger-button,
     #hamburger-button::before,
     #hamburger-button::after {
         display: block;
         background-color: var(--bright-color);
-        height: 2px;
+        height: var(--hamburger-button-height);
 
         transition: all .2s ease-out;
     }
@@ -90,28 +101,28 @@ header a:hover {
     }
     #hamburger-button::before {
         content: "";
-        position: relative;
-        top: -6px;
+        position: absolute;
+        transform: translateY(calc(-1 * var(--hamburger-button-line-translate)));
 
-        width: 20px;
+        width: var(--hamburger-button-big-width);
     }
     #hamburger-button::after {
         content: "";
-        position: relative;
-        top: 4px;
+        position: absolute;
+        transform: translateY(var(--hamburger-button-line-translate));
 
-        width: 20px;
+        width: var(--hamburger-button-big-width);
     }
     #header-nav-toggle:checked ~ #hamburger-button {
         background: transparent;
     }
     #header-nav-toggle:checked ~ #hamburger-button::before {
         content: "";
-        transform: translateY(8px) rotate(-45deg);
+        transform: translateY(0px) rotate(-45deg);
     }
     #header-nav-toggle:checked ~ #hamburger-button::after {
         content: "";
-        transform: translateY(-8px) rotate(45deg);
+        transform: translateY(0px) rotate(45deg);
     }
 
     header nav ul {
@@ -199,7 +210,7 @@ h1 {
 }
 
 .call-to-action-button {
-    background-color: var(--foreground-red-color);
+    background-color: var(--red-color);
     color: var(--bright-color);
 
     font: 'Source Sans Pro';
