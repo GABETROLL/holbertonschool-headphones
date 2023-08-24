@@ -248,6 +248,7 @@ body > header a:hover {
 
 #banner-section {
     background-image: url('images/headphones_hero_1.jpg');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -367,7 +368,8 @@ h1 {
 
 #results-section li {
     background-image: url('images/pentagone.png');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 
     width: 190px;
