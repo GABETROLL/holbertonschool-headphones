@@ -93,6 +93,17 @@ p {
     -moz-osx-font-smoothing: grayscale;
 }
 
+section ul {
+    list-style: none;
+
+    margin: auto;
+    padding: 0px 96px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* EXERCISE 1 */
 
 header {
@@ -311,14 +322,7 @@ h1 {
 }
 
 #what-we-do-section ul {
-    list-style: none;
-
-    margin: auto;
     padding: 0px 96px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 #what-we-do-section li {
