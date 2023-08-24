@@ -418,3 +418,14 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
 }
+
+input {
+    height: 29px;
+
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: left;
+
+    border: none;
+    border-bottom: 1px var(--dark-color) solid;
+}
