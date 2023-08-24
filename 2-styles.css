@@ -350,3 +350,41 @@ h1 {
 #what-we-do-section ul p {
     margin-top: 13px;
 }
+
+/* EXERCISE 2 */
+#results-section {
+    background-image: url('images/headphones_hero_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: var(--bright-color);
+
+    padding-top: 141px;
+
+    text-align: center;
+}
+
+#results-section header {
+    padding: 0px 25px;
+}
+
+#results-section h3 {
+    margin-top: 70px;
+    z-index: 1;
+}
+#results-section p {
+    margin-top: 20px;
+    z-index: 1;
+}
+
+#results-section li {
+    padding: 0px calc(76px / 2);
+}
+
+#results-section img {
+    width: 190px;
+    height: auto;
+
+    position: absolute;
+}
