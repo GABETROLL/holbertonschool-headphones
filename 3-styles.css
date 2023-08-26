@@ -82,7 +82,7 @@ li p {
     /* PLEASE ADD SHADOW */
 }
 .call-to-action-button:hover {
-    opacity: 80%;
+    filter: brightness(87%);
     cursor: pointer;
 }
 
