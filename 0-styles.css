@@ -173,6 +173,7 @@ header a:hover {
         overflow: hidden;
     }
     #header-nav-toggle:checked ~ nav {
+        width: 100%;
         display: block;
     }
     #header-nav-toggle:checked ~ nav ul {
