@@ -78,6 +78,7 @@ p {
     /* PLEASE ADD SHADOW */
 }
 .call-to-action-button:hover {
+    opacity: 80%;
     cursor: pointer;
 }
 
