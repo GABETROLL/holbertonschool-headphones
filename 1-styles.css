@@ -101,7 +101,7 @@ section ul {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 section header {
@@ -224,7 +224,10 @@ body > header a:hover {
     }
 
     #header-nav-toggle:not(:checked) ~ nav {
-        display: none;
+        width: 0px;
+        height: 0px;
+
+        overflow: hidden;
     }
     #header-nav-toggle:checked ~ nav {
         display: block;
@@ -321,15 +324,15 @@ h1 {
 }
 
 #what-we-do-section ul {
+    max-width: 1002px;
     margin-top: 110px;
-    padding: 0px 96px;
 }
 
 #what-we-do-section li {
     max-width: 207px;
     min-height: 180px;
 
-    margin: 0px calc(58px / 2);
+    /* margin: 0px calc(58px / 2); */
 }
 #what-we-do-section li:not(:last-child) {
     margin-bottom: 96px;

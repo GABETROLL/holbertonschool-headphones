@@ -223,7 +223,10 @@ body > header a:hover {
     }
 
     #header-nav-toggle:not(:checked) ~ nav {
-        display: none;
+        width: 0px;
+        height: 0px;
+
+        overflow: hidden;
     }
     #header-nav-toggle:checked ~ nav {
         display: block;
