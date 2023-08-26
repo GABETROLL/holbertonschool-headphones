@@ -78,7 +78,7 @@ p {
     /* PLEASE ADD SHADOW */
 }
 .call-to-action-button:hover {
-    opacity: 80%;
+    filter: brightness(87%);
     cursor: pointer;
 }
 
@@ -282,7 +282,6 @@ h1 {
     }
 
     #banner-section p {
-        display: content-box;
         padding: 0px 11px;
     }
 }
