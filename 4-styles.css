@@ -450,8 +450,6 @@ footer {
     padding-top: 92px;
     padding-bottom: 39px;
 
-
-
     text-align: center;
 }
 
@@ -471,7 +469,6 @@ footer .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-basis: auto;
 }
 
 footer nav {
@@ -480,6 +477,11 @@ footer nav {
 footer ul {
     display: flex;
     justify-content: space-between;
+}
+
+footer .font-icon {
+    font-size: 30px;
+    line-height: 30px;
 }
 
 #copyright {
