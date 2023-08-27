@@ -50,6 +50,10 @@
     text-align: center;
 }
 
+.logo {
+    height: 32px;
+}
+
 h2 {
     font-size: 32px;
     line-height: 37.5px;
@@ -103,11 +107,21 @@ p {
     align-items: center;
 }
 
-section ul {
+ul {
     list-style: none;
-
     display: flex;
+}
+
+section ul {
     justify-content: space-between;
+}
+
+a {
+    color: var(--bright-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--red-color);
 }
 
 .row {
@@ -147,10 +161,6 @@ body > header {
     }
 }
 
-body > header img {
-    height: 32px;
-}
-
 #header-nav-toggle {
     display: none;
 }
@@ -159,22 +169,10 @@ body > header nav {
     width: 255px;
 }
 
-body > header ul {
-    display: flex;
-    list-style: none;
-}
-
 body > header a {
     font-weight: bold;
     font-size: 12px;
     line-height: 15.08px;
-
-    color: var(--bright-color);
-    text-decoration: none;
-}
-
-body > header a:hover {
-    color: var(--red-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -475,7 +473,6 @@ h1 {
     font-size: 14px;
     margin-top: 20px;
 }
-
 
 /* EXERCISE 3 */
 

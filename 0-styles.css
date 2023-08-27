@@ -2,8 +2,6 @@
     --bright-color: white;
     --red-color: #FF6565;
     --dark-color: #071629;
-
-
 }
 
 @font-face {
@@ -23,6 +21,25 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro/SourceSansPro-Semibold.otf');
+    font-weight: 600;
+}
+
+/* COPIED FROM holberton_school-icon/style.css */
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+        url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+        url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+        url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 /* GENERAL SELECTORS */
 
 * {
@@ -30,6 +47,17 @@
     padding: 0px;
 
     font-family: 'Source Sans Pro';
+    text-align: center;
+}
+
+.logo {
+    height: 32px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 600;
 }
 
 p {
@@ -58,10 +86,62 @@ p {
     cursor: pointer;
 }
 
-/* EXERCISE 1 */
+/* COPIED & MODIFIED FROM holberton_school-icon/style.css */
+.font-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    line-height: 1;
 
-header {
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+section ul {
+    justify-content: space-between;
+}
+
+a {
+    color: var(--bright-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--red-color);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+section header {
+    max-width: 637px;
+    margin: 0px auto;
+}
+section header p {
+    margin-top: 40px;
+}
+
+/* EXERCISE 0 */
+
+body > header {
     width: 100%;
+    height: auto;
     position: absolute;
 
     display: flex;
@@ -71,44 +151,28 @@ header {
     flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
-    header {
+    body > header {
         margin-top: 29px;
     }
 }
 @media screen and (min-width: 768px) {
-    header {
+    body > header {
         margin-top: 27.76px;
     }
-}
-
-header img {
-    height: 32px;
 }
 
 #header-nav-toggle {
     display: none;
 }
 
-header nav {
+body > header nav {
     width: 255px;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-header a {
+body > header a {
     font-weight: bold;
     font-size: 12px;
     line-height: 15.08px;
-
-    color: var(--bright-color);
-    text-decoration: none;
-}
-
-header a:hover {
-    color: var(--red-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -158,11 +222,11 @@ header a:hover {
         transform: translateY(0px) rotate(45deg);
     }
 
-    header nav ul {
+    body > header ul {
         flex-direction: column;
     }
 
-    header li {
+    body > header li {
         margin: 20px 0px;
     }
 
@@ -188,7 +252,7 @@ header a:hover {
         display: none;
     }
 
-    header nav ul {
+    body > header ul {
         flex-direction: row;
         justify-content: space-around;
     }
@@ -204,8 +268,6 @@ header a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    text-align: center;
 }
 
 #banner-foreground {
