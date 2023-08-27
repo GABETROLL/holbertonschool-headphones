@@ -404,28 +404,29 @@ h1 {
     padding-top: 141px;
 }
 
-@media screen and (max-width: 480px) {
-    #results-section {
-        padding-top: 125px;
-    }
-}
-
 #results-section header {
     padding: 0px 34px;
 }
 
 @media screen and (min-width: 768px) {
     #results-section ul {
+        margin-top: 56px;
+
         gap: 76px;
         flex-direction: row;
     }
     #results-section .row {
         gap: 76px;
         flex-direction: row;
+    }
+    #results-section {
+        padding-bottom: 79px;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
     #results-section ul {
+        margin-top: 76px;
+
         gap: 42px;
         flex-direction: column;
     }
@@ -433,15 +434,24 @@ h1 {
         gap: 76px;
         flex-direction: row;
     }
+    #results-section {
+        padding-bottom: 53px;
+    }
 }
 @media screen and (max-width: 480px) {
     #results-section ul {
+        margin-top: 77px;
+
         gap: 42px;
         flex-direction: column;
     }
     #results-section .row {
         gap: 42px;
         flex-direction: column;
+    }
+    #results-section {
+        padding-top: 125px;
+        padding-bottom: 69px;
     }
 }
 .result {
@@ -465,6 +475,7 @@ h1 {
     font-size: 14px;
     margin-top: 20px;
 }
+
 
 
 /* EXERCISE 3 */
