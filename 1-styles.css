@@ -112,9 +112,7 @@ section ul {
 
 section header {
     max-width: 637px;
-
     margin: 0px auto;
-    padding: 0px 25px;
 }
 section header p {
     margin-top: 40px;
@@ -332,6 +330,10 @@ h1 {
 
 #what-we-do-section .section-container {
     gap: 110px;
+}
+
+#what-we-do-section header {
+    padding: 0px 25px;
 }
 
 #what-we-do-section .row {
