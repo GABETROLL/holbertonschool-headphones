@@ -94,13 +94,19 @@ p {
     -moz-osx-font-smoothing: grayscale;
 }
 
-section ul {
-    list-style: none;
-
+.section-container {
+    max-width: 1000px;
     margin: auto;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+section ul {
+    list-style: none;
+
+    display: flex;
     justify-content: space-between;
 }
 
@@ -114,7 +120,7 @@ section header p {
     margin-top: 40px;
 }
 
-/* EXERCISE 1 */
+/* EXERCISE 0 */
 
 body > header {
     width: 100%;
@@ -321,26 +327,52 @@ h1 {
     color: var(--dark-color);
     background-color: var(--bright-color);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 110px;
     padding: 110px 0px;
 }
 
-#what-we-do-section ul {
-    max-width: 1002px;
+#what-we-do-section .section-container {
+    gap: 110px;
+}
+
+#what-we-do-section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    #what-we-do-section ul {
+        gap: 58px;
+        flex-direction: row;
+    }
+    #what-we-do-section .row {
+        gap: 58px;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    #what-we-do-section ul {
+        gap: 96px;
+        flex-direction: column;
+    }
+    #what-we-do-section .row {
+        gap: 58px;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 480px) {
+    #what-we-do-section ul {
+        gap: 96px;
+        flex-direction: column;
+    }
+    #what-we-do-section .row {
+        gap: 96px;
+        flex-direction: column;
+    }
 }
 
 #what-we-do-section li {
     max-width: 207px;
     min-height: 180px;
-
-    /* margin: 0px calc(58px / 2); */
-}
-#what-we-do-section li:not(:last-child) {
-    margin-bottom: 96px;
 }
 
 #what-we-do-section .font-icon {

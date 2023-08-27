@@ -61,9 +61,6 @@ p {
     font-size: 16px;
     line-height: 26px;
 }
-li p {
-    font-size: 14px;
-}
 
 .call-to-action-button {
     background-color: var(--red-color);
@@ -72,7 +69,6 @@ li p {
     font-weight: bold;
     font-size: 14px;
     line-height: 17.6px;
-    text-align: center;
 
     width: 162px;
     height: 44px;
@@ -84,10 +80,6 @@ li p {
 .call-to-action-button:hover {
     filter: brightness(87%);
     cursor: pointer;
-}
-
-.logo {
-    height: 32px;
 }
 
 /* COPIED & MODIFIED FROM holberton_school-icon/style.css */
@@ -102,37 +94,33 @@ li p {
     -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
-    list-style: none;
+.section-container {
+    max-width: 1000px;
+    margin: auto;
+
     display: flex;
-}
-
-a {
-    color: var(--bright-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--red-color);
+    flex-direction: column;
+    align-items: center;
 }
 
 section ul {
-    margin: auto;
+    list-style: none;
 
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 section header {
     max-width: 637px;
 
     margin: 0px auto;
+    padding: 0px 25px;
 }
 section header p {
     margin-top: 40px;
 }
 
-/* EXERCISE 1 */
+/* EXERCISE 0 */
 
 body > header {
     width: 100%;
@@ -156,6 +144,10 @@ body > header {
     }
 }
 
+body > header img {
+    height: 32px;
+}
+
 #header-nav-toggle {
     display: none;
 }
@@ -164,10 +156,22 @@ body > header nav {
     width: 255px;
 }
 
+body > header ul {
+    display: flex;
+    list-style: none;
+}
+
 body > header a {
     font-weight: bold;
     font-size: 12px;
     line-height: 15.08px;
+
+    color: var(--bright-color);
+    text-decoration: none;
+}
+
+body > header a:hover {
+    color: var(--red-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -236,6 +240,7 @@ body > header a {
         display: block;
     }
     #header-nav-toggle:checked ~ nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -254,7 +259,6 @@ body > header a {
 
 #banner-section {
     background-image: url('images/headphones_hero_1.jpg');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -300,6 +304,7 @@ h1 {
 
 #subtitle {
     font-weight: bold;
+    font-size: 16px;
     line-height: 20.11px;
 }
 
@@ -322,30 +327,52 @@ h1 {
     color: var(--dark-color);
     background-color: var(--bright-color);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 110px;
     padding: 110px 0px;
 }
 
-#what-we-do-section header {
-    padding: 0px 25px;
+#what-we-do-section .section-container {
+    gap: 110px;
 }
 
-#what-we-do-section ul {
-    padding: 0px 96px;
+#what-we-do-section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    #what-we-do-section ul {
+        gap: 58px;
+        flex-direction: row;
+    }
+    #what-we-do-section .row {
+        gap: 58px;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    #what-we-do-section ul {
+        gap: 96px;
+        flex-direction: column;
+    }
+    #what-we-do-section .row {
+        gap: 58px;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 480px) {
+    #what-we-do-section ul {
+        gap: 96px;
+        flex-direction: column;
+    }
+    #what-we-do-section .row {
+        gap: 96px;
+        flex-direction: column;
+    }
 }
 
 #what-we-do-section li {
     max-width: 207px;
     min-height: 180px;
-
-    margin: 0px calc(58px / 2);
-}
-#what-we-do-section li:not(:last-child) {
-    margin-bottom: 96px;
 }
 
 #what-we-do-section .font-icon {
