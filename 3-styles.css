@@ -110,11 +110,14 @@ section ul {
     justify-content: space-between;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
 section header {
     max-width: 637px;
-
     margin: 0px auto;
-    padding: 0px 25px;
 }
 section header p {
     margin-top: 40px;
@@ -334,9 +337,8 @@ h1 {
     gap: 110px;
 }
 
-#what-we-do-section .row {
-    display: flex;
-    justify-content: space-between;
+#what-we-do-section header {
+    padding: 0px 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -402,10 +404,46 @@ h1 {
     padding-top: 141px;
 }
 
+@media screen and (max-width: 480px) {
+    #results-section {
+        padding-top: 125px;
+    }
+}
+
 #results-section header {
     padding: 0px 34px;
 }
 
+@media screen and (min-width: 768px) {
+    #results-section ul {
+        gap: 76px;
+        flex-direction: row;
+    }
+    #results-section .row {
+        gap: 76px;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    #results-section ul {
+        gap: 42px;
+        flex-direction: column;
+    }
+    #results-section .row {
+        gap: 76px;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 480px) {
+    #results-section ul {
+        gap: 42px;
+        flex-direction: column;
+    }
+    #results-section .row {
+        gap: 42px;
+        flex-direction: column;
+    }
+}
 .result {
     background-image: url('images/pentagone.png');
     background-repeat: no-repeat;
@@ -414,10 +452,6 @@ h1 {
 
     width: 190px;
     height: 190px;
-    margin: 0px calc(76px / 2);
-}
-.result:not(:last-child) {
-    margin-bottom: 42px;
 }
 
 .result h3 {
@@ -428,6 +462,7 @@ h1 {
     margin-top: 70px;
 }
 .result p {
+    font-size: 14px;
     margin-top: 20px;
 }
 
