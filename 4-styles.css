@@ -107,6 +107,15 @@ ul {
     display: flex;
 }
 
+a {
+    color: var(--bright-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red-color);
+}
+
 section ul {
     margin: auto;
 
@@ -159,13 +168,6 @@ body > header a {
     font-weight: bold;
     font-size: 12px;
     line-height: 15.08px;
-
-    color: var(--bright-color);
-    text-decoration: none;
-}
-
-body > header a:hover {
-    color: var(--red-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -474,6 +476,8 @@ footer .container {
 
 footer nav {
     width: 130px;
+}
+footer ul {
     display: flex;
     justify-content: space-between;
 }
