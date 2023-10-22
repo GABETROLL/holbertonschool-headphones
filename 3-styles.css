@@ -1,7 +1,8 @@
 :root {
     --bright-color: white;
     --red-color: #FF6565;
-    --dark-color: #071629;
+    --dark-color: rgb(7, 22, 41);
+    --dark-transparent-color: rgba(7, 22, 41, 17.45%);
 }
 
 @font-face {
@@ -329,6 +330,8 @@ h1 {
     background-color: var(--bright-color);
 
     padding: 110px 0px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 #what-we-do-section .section-container {
@@ -480,11 +483,8 @@ h1 {
     background-color: var(--bright-color);
     color: var(--dark-color);
 
-    padding-top: 110px;
-    padding-bottom: 130px;
-}
+    padding: 110px 20px 130px;
 
-#contact-us-section .container {
     max-width: 335px;
     min-height: 373px;
 
@@ -520,7 +520,7 @@ input {
     text-align: left;
 
     border: none;
-    border-bottom: 1px rgba(var(--dark-color), 17.45%) solid;
+    border-bottom: 1px var(--dark-transparent-color) solid;
 }
 
 input::placeholder {

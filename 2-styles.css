@@ -329,6 +329,8 @@ h1 {
     background-color: var(--bright-color);
 
     padding: 110px 0px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 #what-we-do-section .section-container {
