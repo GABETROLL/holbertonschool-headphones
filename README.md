@@ -1,7 +1,7 @@
 # Headphones Website
-Implementing a responsive web design from scratchm from a [Figma file](https://www.figma.com/file/FfnVADRC9xgI3yiZliTBYZ/Holberton-School---Headphone-company?type=design&node-id=0%3A487&mode=dev), as a project in Holberton. For this project, no files were provided.
+Implementing a responsive web design from scratch from a [Figma file](https://www.figma.com/file/FfnVADRC9xgI3yiZliTBYZ/Holberton-School---Headphone-company?type=design&node-id=0%3A487&mode=dev), as a project assigned by Holberton. For this project, no files were provided.
 
-The goal of this project is to put the skills we learned in the first month of the Full-Stack Web Development Specialization to work here. We've been learning about responsive design, forms and how to make a hamburger button.
+The goal of this project is to put the skills we learned in the first month of the Full-Stack Web Development Specialization to work here. We've been learning about HTML+CSS, responsive design, forms, and how to make a hamburger button.
 
 The webpage is HTML and CSS only and front-end only.
 ## Webpage Screenshots
