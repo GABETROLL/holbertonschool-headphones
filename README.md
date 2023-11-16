@@ -37,8 +37,9 @@ I'm Gabriel Fernandez, the developer of this project, and I started studying at 
 <a href="https://twitter.com/gabe_programs" target="_blank">
 <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" />
 </a>
+
 ## Building this project
-While staying over at my grandparents' house due to a family situation, I spent the week building this webpage. I had (and still have) lots of trouble with the banner and header, so I skipped ahead to the next exercises, and found myself constantly having to go back and re-do the older ones to make them match. Eventually, I managed to make the webpage function somewhat decently.
+I spent a week in my grandparents' house building this webpage. I had a hard time concentrating, but still chose to persevere. I had (and still have) lots of trouble with the banner and header, so I skipped ahead to the next exercises, and found myself constantly having to go back and re-do the older ones to make them match. Eventually, I managed to make the webpage function somewhat decently.
 
 The most difficult challenges were:
 - Making the website look as exactly as the Figma file as possible
@@ -47,3 +48,5 @@ The most difficult challenges were:
 - Trying to understand the instructions
 - having things align
 - working in an unusual environment
+## Feedback
+All feedback is welcome!
