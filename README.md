@@ -16,9 +16,8 @@ The webpage is HTML and CSS only and front-end only.
 ### "Contact Us" Section & Footer, in Mobile
 !["Contact Us" section & footer, in mobile](readme_images/4.png)
 ## Features
-- Hamburger button on mobile
-- Responsive breakpoints for rows & columns of dots
-- Responsive background images
+- Hidden Nav bar on mobile
+- Responsive breakpoints
 ### Features that Still Need Implementing
 - Have the hamburger respond consistently
 - Have the header, header items and banner background align correctly
