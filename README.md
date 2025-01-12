@@ -24,8 +24,8 @@ The webpage is HTML and CSS only and front-end only.
 - Have the items in the Results and What We Do sections fit correctly inside the screen
 ## Files
 Each file that starts with a number is part of that exercise, and each exercise adds the next section of the page.
-## Check it out!
-It's also a GitHub webpage!
+## It's also a GitHub webpage!
+Check it out: https://gabetroll.github.io/holbertonschool-headphones/
 ## About me
 I'm Gabriel Fernandez, the developer of this project, and I started studying at Holberton in Sep. 2022, and have chosen Web Development as my Holberton specialization. This project is part of that specialization.
 ### My Contacts
